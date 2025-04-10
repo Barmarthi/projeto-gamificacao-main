@@ -80,21 +80,11 @@ body{
   }
 
 .cabecalho .logo{
-    width: 65px;
-    height: 65px;
+    width: 60px;
+    height:60px;
     border-radius: 50%;
     border: 2px solid #fff;
-    text-decoration: underline;
-    text-align: center;
-    line-height: 55px;
-    font-family: "Raleway", sans-serif;
-    font-size: 20px;
     transition: 0.2s;
-}
-
-.cabecalho a:hover .logo{
-    color: #e51111;
-    border: 2px solid #e20707;
 }
 
 .cabecalho .menu a{
@@ -105,7 +95,7 @@ body{
 }
 
 .cabecalho .menu a:hover{
-    background-color: #f81010;
+    background-color: #282828;
     color: #fff;
     border-radius: 50px;
 } 
@@ -225,13 +215,32 @@ body{
     margin-bottom: 20px;
 }
 
-.home .redes-sociais{
-display: flex;
-gap: 20px;
+.home .categorias-atalho{
+    display: flex;
+    gap: 20px;
+    }
 
-
+.home .categorias-atalho a h1{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    padding-top: 20px;
+    text-align:center;
+    font-size: 20px;
+    transition: 0.1s;
 }
 
+.home .categorias-atalho a h1:hover{
+    color: #ff0505;
+    border: 2px solid #fff;
+    transform: scale(1.1);
+}
+
+/* .home .redes-sociais{
+    display: flex;
+    gap: 20px;
+    }
 
 .home .redes-sociais a i{
     border: 1px solid #fff;
@@ -248,7 +257,8 @@ gap: 20px;
     color: #ff0505;
     border: 1px solid #fa0505;
     transform: scale(1.1);
-}
+} */
+
 /* TALVEZ EXCLUIR */
 .home .container-foto .foto{
     max-width: 450px;
