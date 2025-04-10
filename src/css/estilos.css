@@ -8,17 +8,16 @@ body{
     font-family: "Poppins", sans-serif;
     margin: 0 auto;
     max-width: 1120px;
-    background: rgb(3,1,8);
-background: linear-gradient(150deg, rgba(3,1,8,1), rgba(198,5,19,1), rgba(245,20,4,0.9781162464985994));
+    background: black;
     background-size: 120% 120%;
 }
 /*-------------------------------- CSS TESTE 1------------------------------ */
-/* .logotestesite .logoteste{
+.logo{
     max-width: 100px;
     border-radius:55%;
 }
 
-.logotestesite .logoteste img{
+.logo .img{
     width: 200%;
     border-radius: 10%;
 } 
@@ -36,7 +35,6 @@ background: linear-gradient(150deg, rgba(3,1,8,1), rgba(198,5,19,1), rgba(245,20
     gap: 80px;
 }
 
-------------------------dropdown -------------------
 .dropdown {
     float: left;
     overflow: hidden;
@@ -53,7 +51,7 @@ background: linear-gradient(150deg, rgba(3,1,8,1), rgba(198,5,19,1), rgba(245,20
   }
 
   .dropdown .dropbtn:hover {
-    background-color: #f81010;
+    background-color: black;
     color: #fff;
     border-radius: 50px;
   }
@@ -62,9 +60,8 @@ background: linear-gradient(150deg, rgba(3,1,8,1), rgba(198,5,19,1), rgba(245,20
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: inherit;
+    background-color: black;  /* LINHA Q MUDA HOVER  */
     color: white;
-    background-color: inherit;
     font-family: inherit;
     min-width: 160px;
     z-index: 1;
@@ -81,9 +78,7 @@ background: linear-gradient(150deg, rgba(3,1,8,1), rgba(198,5,19,1), rgba(245,20
   .dropdown:hover .dropdown-content {
     display:block;
   }
-  /* <!-------------sla */
 
-/* 
 .cabecalho .logo{
     width: 65px;
     height: 65px;
@@ -113,12 +108,12 @@ background: linear-gradient(150deg, rgba(3,1,8,1), rgba(198,5,19,1), rgba(245,20
     background-color: #f81010;
     color: #fff;
     border-radius: 50px;
-}  */
+} 
 
 /* ----------------------------começo SEPARAÇÃO DE TESTE---------------------------- */
 
 
-.cabecalho{
+ /* .cabecalho{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -131,8 +126,6 @@ background: linear-gradient(150deg, rgba(3,1,8,1), rgba(198,5,19,1), rgba(245,20
     gap: 80px;
 }
 
-
-/* <!-------------dropdown */
 .dropdown {
     float: left;
     overflow: hidden;
@@ -176,18 +169,16 @@ background: linear-gradient(150deg, rgba(3,1,8,1), rgba(198,5,19,1), rgba(245,20
   .dropdown:hover .dropdown-content {
     display:block;
   }
-  /* <!-------------sla */
-
 
 .cabecalho .logo{
     width: 150px;
     height: 55px;
     transition: 0.2s;
 }
-/* 
+
 .cabecalho a:hover .logo{
     background-color: #606060;
-} */
+} 
 
 .cabecalho .menu a{
     font-size: 30px;
@@ -199,7 +190,7 @@ background: linear-gradient(150deg, rgba(3,1,8,1), rgba(198,5,19,1), rgba(245,20
 .cabecalho .menu a:hover{
     background-color: #3a3939;
     color: #fff;
-}
+} */
 
 
 /* ----------------------------SEPARAÇÃO DE TESTE---------------------------- */
@@ -269,11 +260,11 @@ gap: 20px;
     border-radius: 10%;
 }
 
-.home .foto.sombra-interna{
+/* .home .foto.sombra-interna{
     background: linear-gradient(to right, #70007c, #106ccf, #d31cc1);
     background-size: 180% 180%;
     animation: gradient-animation 5s ease infinite;
-}
+} */
 /* TALVEZ EXCLUIR, menos gradiente */
 
 .projetos{
