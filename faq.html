@@ -22,18 +22,70 @@
 <body>
     <!--------cabeçalho--->
     <header class="cabecalho">
-        <nav class="menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="jogos.html">Jogos</a>
-            <a class="cabecalho__menu__link" href="impactos.html">Impactos</a>
-            <a class="cabecalho__menu__link" href="faq.html">FAQ</a>
-        </nav>
-        <a href="#">
-            <h1 class="logo">BMT</h1>
-        </a>
-    </header>
+      <nav class="menu">
+          <a class="cabecalho__menu__link" href="index.html">Home</a>
+          <div class="dropdown">
+              <button class="dropbtn">Jogos 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div> 
+          <a class="cabecalho__menu__link" href="impactos.html">Impactos</a>
+          <a class="cabecalho__menu__link" href="faq.html">FAQ</a>
 
+                  <div class="logo">
+                  <img src="./src/imagens/logorounded.png" alt="teste de logo da pag"></div>
+      </nav>
+  </header>
 
+    <div class="bloco-pergunta">
+        <p class="pergunta" onclick="mostrarResposta(this)">
+          N sei n sei?
+          <span class="seta">&#9654;</span>
+        </p>
+        <p class="resposta">blah blah blah</p>
+      </div>
+    
+      <div class="bloco-pergunta">
+        <p class="pergunta" onclick="mostrarResposta(this)">
+          pipipipopopo?
+          <span class="seta">&#9654;</span>
+        </p>
+        <p class="resposta">aaaaaaaaaaaaaaaaaaaaaaaaaa.</p>
+      </div>
+    
+      <div class="bloco-pergunta">
+        <p class="pergunta" onclick="mostrarResposta(this)">
+          qualquer coisa?
+          <span class="seta">&#9654;</span>
+        </p>
+        <p class="resposta">bbbbbbbbbbbbbbbbbbbbbbbb.</p>
+      </div>
+
+      <script>
+        function mostrarResposta(elementoPergunta) {
+          const resposta = elementoPergunta.nextElementSibling;
+          const seta = elementoPergunta.querySelector('.seta');
+          const isVisivel = resposta.style.display === 'block';
+    
+          // Se quiser ocultar as outras ao abrir uma, descomente essa parte
+          document.querySelectorAll('.resposta').forEach(r => r.style.display = 'none');
+          document.querySelectorAll('.seta').forEach(s => s.classList.remove('girada'));
+    
+          // Toggle visibilidade
+          if (!isVisivel) {
+            resposta.style.display = 'block';
+            seta.classList.add('girada');
+          } else {
+            resposta.style.display = 'none';
+            seta.classList.remove('girada');
+          }
+        }
+      </script>
 
 </body>
 </html>
